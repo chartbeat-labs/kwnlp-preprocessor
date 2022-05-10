@@ -19,7 +19,7 @@ from kwnlp_preprocessor import argconfig
 logger = logging.getLogger(__name__)
 
 
-CHUNK_SIZE = 500_000
+CHUNK_SIZE = 200_000
 
 
 def _count_unfinished_bzip_jobs(bzip_jobs: Iterable[subprocess.Popen]) -> int:

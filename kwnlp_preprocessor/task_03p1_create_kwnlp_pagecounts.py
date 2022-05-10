@@ -76,8 +76,6 @@ def main(
                 # ['en.wikipedia', 'Anarchism', '12', 'desktop', '1614', 'A69B77C73D72E59F46G52H67I37J44K50L44M58N56O90P103Q78R79S94T60U68V80W88X70']
                 # ['en.wikipedia', 'Anarchism', '12', 'mobile-web', '1972', 'A94B100C120D86E124F91G65H83I57J63K60L64M58N68O81P86Q84R80S99T67U80V90W79X93']
                 pageviews[page_title] += int(daily_views)
-                if page_title == "Anarchism":
-                    print(pieces)
 
     rows = [(page_title, views) for page_title, views in pageviews.items()]
     t_end = time.time()
