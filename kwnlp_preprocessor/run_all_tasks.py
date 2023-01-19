@@ -38,7 +38,7 @@ def main(
     workers: int = argconfig.DEFAULT_KWNLP_WORKERS,
     include_item_statements: bool = False,
 ) -> None:
-    logger.info("Starting tasks, will download everything to", data_path)
+    logger.info("Starting tasks, will download everything to: %s", data_path)
     task_00_download_raw_dumps.main(
         wp_yyyymmdd,
         wd_yyyymmdd,
@@ -120,7 +120,7 @@ def main(
     logger.info("Done with collect data")
 
     logger.info("Done with all tasks")
-    logger.info("Everything should be saved to", data_path)
+    logger.info("Everything should be saved to: %s", data_path)
 
 
 if __name__ == "__main__":
