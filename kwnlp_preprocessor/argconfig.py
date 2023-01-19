@@ -6,7 +6,7 @@ import sys
 from typing import Dict, List
 
 DEFAULT_KWNLP_DATA_PATH: str = ""
-DEFAULT_KWNLP_WIKI_MIRROR_URL: str = "https://dumps.wikimedia.your.org/"
+DEFAULT_KWNLP_WIKI_MIRROR_URL: str = "https://dumps.wikimedia.org"
 DEFAULT_KWNLP_WIKI: str = "enwiki"
 DEFAULT_KWNLP_DOWNLOAD_JOBS: str = (
     "pageviewcomplete,pagetable,pagepropstable,redirecttable,articlesdump,wikidata"
