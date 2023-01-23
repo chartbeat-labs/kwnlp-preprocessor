@@ -66,7 +66,7 @@ def _get_links_from_link_annotated_text(compressed_link_annotated_text: Dict) ->
         for target_page_id, anchor_span in zip(
             paragraph["target_page_ids"], paragraph["anchor_spans"]
         ):
-            anchor_text = paragraph["plaintext"][anchor_span[0] : anchor_span[1]]
+            anchor_text = paragraph["plaintext"][anchor_span[0] : anchor_span[1]].lower()
             dfd["source_page_id"].append(compressed_link_annotated_text["page_id"])
             dfd["section_idx"].append(paragraph["section_idx"])
             dfd["paragraph_idx"].append(paragraph_idx)

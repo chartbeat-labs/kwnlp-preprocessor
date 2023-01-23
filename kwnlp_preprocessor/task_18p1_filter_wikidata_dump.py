@@ -280,7 +280,7 @@ def parse_file(args: Dict) -> None:
                     [
                         {
                             "item_id": source_id,
-                            "en_alias": alias,
+                            "en_alias": alias.lower(),
                         }
                         for alias in wd_entity.get_aliases(lang="en")
                     ]

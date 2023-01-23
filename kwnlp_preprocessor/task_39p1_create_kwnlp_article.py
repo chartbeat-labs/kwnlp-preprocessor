@@ -111,6 +111,7 @@ def main(
         + [f"isa_Q{nqid}" for nqid in ROOT_NQIDS]
     ]
     df = df.sort_values("page_id")
+    df["page_title"] = df["page_title"].str.lower()
     file_path = os.path.join(
         wp_dump_path,
         "kwnlp-sql",
