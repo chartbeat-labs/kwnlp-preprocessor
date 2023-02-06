@@ -49,7 +49,7 @@ setup(
     install_requires=[
         "funcy",
         "kwnlp_dump_downloader>=0.1.0,<0.2",
-        "kwnlp_sql_parser>=0.0.2,<0.1",
+        "kwnlp_sql_parser==0.0.1",
         "mwtext",
         "mwxml",
         "networkx",
